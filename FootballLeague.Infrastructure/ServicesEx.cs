@@ -13,7 +13,7 @@ namespace FootballLeague.Infrastructure
         {
             return services
                 .AddDbContext<IFootballLeagueDbContext, FootballLeagueDbContext>(x =>
-                    x.UseSqlServer(configuration.GetConnectionString("Default")));
+                    x.UseNpgsql(configuration.GetConnectionString("Default")));
         }
     }
 }
