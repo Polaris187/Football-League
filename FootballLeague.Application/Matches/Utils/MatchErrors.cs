@@ -14,6 +14,6 @@ namespace FootballLeague.Application.Matches.Utils
             new($"Match could not have started at '{startedAt}' which is in the future.");
 
         public static ConflictError AlreadyExists(string team1Name, string team2Name, DateTime startedAt) =>
-            new($"Match between '{team1Name}' and '{team2Name}' at '{startedAt}' already exists.");
+            new($"Match between '{team1Name}' and '{team2Name}' at '{startedAt}' is already played.");
     }
 }
